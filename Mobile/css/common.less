@@ -1,25 +1,25 @@
 .clearFix() {
-  &:before, &:after {
-    content: "\0020";
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-  &:after {
-    clear: both;
-  }
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	&:after {
+		clear: both;
+	}
 }
 .boxFix() {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .noWrap() {
-  white-space: nowrap;
-  word-break: keep-all;
+	white-space: nowrap;
+	word-break: keep-all;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -35,72 +35,153 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
 }
 
 html {
-  line-height: 1;
+	line-height: 1;
 }
 
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
 }
 
 q, blockquote {
-  quotes: none;
+	quotes: none;
 }
 q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+	content: "";
+	content: none;
 }
 
 a img {
-  border: none;
+	border: none;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
+	display: block;
 }
 
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 html,
 body {
-  height: 100%;
-  min-height: 100%;
+	height: 100%;
+	min-height: 100%;
 }
 * {
-  &:focus {
-    outline:none;
-  }
-  &:before, &:after {
-    .boxFix;
-  }
+	.boxFix;
+	&:focus {
+		outline:none;
+	}
+	&:before, &:after {
+		.boxFix;
+	}
 }
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
+}
+b, strong {
+	font-weight: 700;
+}
+.clearfix {
+	.clearFix;
 }
 ::-moz-focus-inner {
-  border: 0;
+	border: 0;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.page {
+	padding-top: 90px;
+	padding-bottom: 30px;
+}
+header {
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: url(../images/bg-header.png) no-repeat;
+	background-size: 100% 100%;
+	img {display: block; width: 100%; height: 100%;}
+	.logo {
+		width: 75px;
+		height: 78px;
+		position: absolute;
+		left: 15px;
+		top: 0;
+	}
+	.slogan {
+		width: 131px;
+		height: 37px;
+		position: absolute;
+		left: 105px;
+		top: 17px;
+	}
+	.logo-uni {
+		width: 33px;
+		height: 37px;
+		position: absolute;
+		right: 19px;
+		top: 19px;
+	}
+}
+footer {
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	line-height: 12px;
+	font-size: 9px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+}
+
+
+.checkin-suc {
+	padding: 5px 15px;
+	.title {font-size: 15px; line-height: 19px; margin: 0 0 20px 0; color: #0b6fa8; font-weight: 600;}
+	.info {
+		font-size: 15px;
+		label {float: left; display: block; width: 86px; color: #0b6fa8; clear: left; line-height: 1.35em;}
+		p {margin-left: 86px; line-height: 1.35em;}
+		.course-logo {padding-top: 10px;
+			img {display: block; width: 70px; height: 70px;}
+		}
+		.desc {
+			padding-top: 5px; margin-left: 86px; line-height: 1.35em; font-size: 12px;
+			p {margin-left: 0;}
+		}
+	}
 }
