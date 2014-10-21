@@ -134,6 +134,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
 }
 html,
 body {
@@ -186,7 +187,6 @@ strong {
 .wrapper {
   width: 100%;
   height: 100%;
-  overflow: auto;
 }
 .page {
   padding-top: 90px;
@@ -340,15 +340,20 @@ footer {
 }
 .checkin-suc-page .info table td,
 .checkin-suc-page .info table th {
-  padding: 0 6px 3px 0;
+  padding: 0 0 2px 0;
   font-size: 14px;
-  line-height: 1.3em;
+  line-height: 1.15em;
   vertical-align: top;
 }
 .checkin-suc-page .info table th {
   text-align: left;
-  width: 86px;
+  width: 27%;
   color: #0b6fa8;
+  padding-right: 6px;
+}
+.checkin-suc-page .info table b {
+  display: inline-block;
+  margin-bottom: 6px;
 }
 .checkin-suc-page .info .desc {
   padding-top: 5px;

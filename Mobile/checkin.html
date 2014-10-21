@@ -10,10 +10,8 @@
 $(function(){
 	$(':text[data-role="account-input"]').on('focus', function(){
 		$('.welcome-bg, footer').hide();
-		$('.wrapper').css('overflow', 'visible');
 	}).on('blur', function(){
 		$('.welcome-bg, footer').show();
-		$('.wrapper').css('overflow', 'auto');
 	});
 });
 </script>
@@ -27,7 +25,7 @@ $(function(){
 				<div class="logo-uni"><img src="images/logo-uni.png"></div>
 			</header>
 			<div class="main">
-				<div class="checkin-page">
+				<form class="checkin-page" action="checkin-suc.html" method="get">
 					<div class="welcome-bg"><img src="images/bg-welcome.png"></div>
 					<div class="course-title">
 						<p class="welcome-to"><img src="images/welcome-to.png"></p>
@@ -40,7 +38,7 @@ $(function(){
 					<div class="submit-checkin">
 						<button type="submit">Checkin</button>
 					</div>
-				</div>
+				</form>
 			</div>
 			<footer>
 				&copy; 2014 Unilever<br>
