@@ -246,37 +246,29 @@ footer {
   color: #0b6fa8;
   font-weight: 600;
 }
-.checkin-suc .info {
-  /*
-		font-size: 15px;
-		label {float: left; display: block; width: 86px; color: #0b6fa8; clear: left; line-height: 1.35em;}
-		p {margin-left: 86px; line-height: 1.35em;}
-		.course-logo {padding-top: 10px;
-			img {display: block; width: 70px; height: 70px;}
-		}
-		.desc {
-			padding-top: 5px; margin-left: 86px; line-height: 1.35em; font-size: 12px;
-			p {margin-left: 0;}
-		}
-		*/
-  font-size: 14px;
-  line-height: 1.3em;
+.checkin-suc .course-logo {
+  text-align: center;
   margin-bottom: 15px;
 }
-.checkin-suc .info-table {
-  border: 1px solid #666;
+.checkin-suc .course-logo img {
+  display: inline-block;
+  width: auto;
+  max-width: 60%;
 }
-.checkin-suc .info-table td,
-.checkin-suc .info-table th {
-  border: 1px solid #666;
-  padding: 3px 5px;
+.checkin-suc .info table td,
+.checkin-suc .info table th {
+  padding: 0 6px 3px 0;
   font-size: 14px;
-  line-height: 1.2em;
-}
-.checkin-suc .info-table th {
-  font-weight: bold;
-  text-align: left;
-  white-space: nowrap;
-  word-break: keep-all;
+  line-height: 1.3em;
   vertical-align: top;
+}
+.checkin-suc .info table th {
+  text-align: left;
+  width: 86px;
+  color: #0b6fa8;
+}
+.checkin-suc .info .desc {
+  padding-top: 5px;
+  line-height: 1.35em;
+  font-size: 12px;
 }
