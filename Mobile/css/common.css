@@ -141,6 +141,7 @@ body {
   min-height: 100%;
 }
 * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -155,6 +156,9 @@ body {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+input[type="text"]:focus {
+  outline: none;
 }
 img {
   max-width: 100%;
@@ -236,38 +240,117 @@ footer {
   padding-right: 15px;
   padding-top: 3px;
 }
-.checkin-suc {
+.checkin-page {
   padding: 5px 15px;
 }
-.checkin-suc .title {
+.checkin-page .welcome-bg {
+  text-align: center;
+  padding: 5px 0 25px 0;
+}
+.checkin-page .welcome-bg img {
+  display: inline-block;
+  width: 189px;
+  height: 140px;
+}
+.checkin-page .course-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.checkin-page .course-title .welcome-to img {
+  display: inline-block;
+  width: 177px;
+  height: 22px;
+}
+.checkin-page .course-title h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #06476f;
+}
+.checkin-page .account-input {
+  width: 73%;
+  min-width: 235px;
+  height: 38px;
+  overflow: hidden;
+  margin: 0 auto 18px auto;
+  border: 1px solid #42b936;
+  border-radius: 5px;
+}
+.checkin-page .account-input label {
+  display: block;
+  margin-right: 125px;
+  height: 36px;
+  line-height: 36px;
+}
+.checkin-page .account-input label input {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding-left: 10px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.checkin-page .account-input span {
+  display: block;
+  float: right;
+  width: 123px;
+  height: 36px;
+  line-height: 32px;
+}
+.checkin-page .account-input span img {
+  width: 113px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkin-page .submit-checkin {
+  width: 73%;
+  min-width: 235px;
+  height: 38px;
+  margin: 0 auto 10px auto;
+}
+.checkin-page .submit-checkin button {
+  width: 100%;
+  border: 0;
+  background: #42b936;
+  border-radius: 5px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 15px;
+  color: #fff;
+}
+.checkin-suc-page {
+  padding: 5px 15px;
+}
+.checkin-suc-page .title {
   font-size: 15px;
   line-height: 19px;
   margin: 0 0 20px 0;
   color: #0b6fa8;
   font-weight: 600;
 }
-.checkin-suc .course-logo {
+.checkin-suc-page .course-logo {
   text-align: center;
   margin-bottom: 15px;
 }
-.checkin-suc .course-logo img {
+.checkin-suc-page .course-logo img {
   display: inline-block;
   width: auto;
   max-width: 60%;
 }
-.checkin-suc .info table td,
-.checkin-suc .info table th {
+.checkin-suc-page .info table td,
+.checkin-suc-page .info table th {
   padding: 0 6px 3px 0;
   font-size: 14px;
   line-height: 1.3em;
   vertical-align: top;
 }
-.checkin-suc .info table th {
+.checkin-suc-page .info table th {
   text-align: left;
   width: 86px;
   color: #0b6fa8;
 }
-.checkin-suc .info .desc {
+.checkin-suc-page .info .desc {
   padding-top: 5px;
   line-height: 1.35em;
   font-size: 12px;

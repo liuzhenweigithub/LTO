@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <title></title>
 <link rel="stylesheet" href="css/common.css">
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(':text[data-role="account-input"]').on('focus', function(){
+		$('.welcome-bg, footer').hide();
+	}).on('blur', function(){
+		$('.welcome-bg, footer').show();
+	});
+});
+</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -15,10 +25,23 @@
 				<div class="logo-uni"><img src="images/logo-uni.png"></div>
 			</header>
 			<div class="main">
-
+				<div class="checkin-page">
+					<div class="welcome-bg"><img src="images/bg-welcome.png"></div>
+					<div class="course-title">
+						<p class="welcome-to"><img src="images/welcome-to.png"></p>
+						<h2>Big Data Workshop</h2>
+					</div>
+					<div class="account-input">
+						<span><img src="images/domain-text.png"></span>
+						<label><input data-role="account-input" type="text" value="" placeholder="Your account"></label>
+					</div>
+					<div class="submit-checkin">
+						<button type="submit">Checkin</button>
+					</div>
+				</div>
 			</div>
 			<footer>
-				&copyright; 2014 Unilever<br>
+				&copy; 2014 Unilever<br>
 				Led by China Digital Marketing &amp; Operation Team
 			</footer>
 		</div>
