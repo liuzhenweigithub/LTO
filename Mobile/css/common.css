@@ -33,8 +33,6 @@ samp,
 small,
 strike,
 strong,
-sub,
-sup,
 tt,
 var,
 b,
@@ -249,34 +247,36 @@ footer {
   font-weight: 600;
 }
 .checkin-suc .info {
-  font-size: 15px;
+  /*
+		font-size: 15px;
+		label {float: left; display: block; width: 86px; color: #0b6fa8; clear: left; line-height: 1.35em;}
+		p {margin-left: 86px; line-height: 1.35em;}
+		.course-logo {padding-top: 10px;
+			img {display: block; width: 70px; height: 70px;}
+		}
+		.desc {
+			padding-top: 5px; margin-left: 86px; line-height: 1.35em; font-size: 12px;
+			p {margin-left: 0;}
+		}
+		*/
+  font-size: 14px;
+  line-height: 1.3em;
+  margin-bottom: 15px;
 }
-.checkin-suc .info label {
-  float: left;
-  display: block;
-  width: 86px;
-  color: #0b6fa8;
-  clear: left;
-  line-height: 1.35em;
+.checkin-suc .info-table {
+  border: 1px solid #666;
 }
-.checkin-suc .info p {
-  margin-left: 86px;
-  line-height: 1.35em;
+.checkin-suc .info-table td,
+.checkin-suc .info-table th {
+  border: 1px solid #666;
+  padding: 3px 5px;
+  font-size: 14px;
+  line-height: 1.2em;
 }
-.checkin-suc .info .course-logo {
-  padding-top: 10px;
-}
-.checkin-suc .info .course-logo img {
-  display: block;
-  width: 70px;
-  height: 70px;
-}
-.checkin-suc .info .desc {
-  padding-top: 5px;
-  margin-left: 86px;
-  line-height: 1.35em;
-  font-size: 12px;
-}
-.checkin-suc .info .desc p {
-  margin-left: 0;
+.checkin-suc .info-table th {
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+  word-break: keep-all;
+  vertical-align: top;
 }
