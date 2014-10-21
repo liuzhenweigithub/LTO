@@ -10,8 +10,10 @@
 $(function(){
 	$(':text[data-role="account-input"]').on('focus', function(){
 		$('.welcome-bg, footer').hide();
+		$('.wrapper').css('overflow', 'visible');
 	}).on('blur', function(){
 		$('.welcome-bg, footer').show();
+		$('.wrapper').css('overflow', 'auto');
 	});
 });
 </script>
