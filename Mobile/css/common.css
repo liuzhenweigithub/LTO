@@ -378,7 +378,7 @@ footer {
   padding-left: 30px;
   color: #535353;
   background: url(../images/ico-shrink.png) no-repeat left top;
-  background-size: 23px 17px;
+  background-size: 20px 17px;
 }
 .courses-list-page li dl {
   display: none;
@@ -402,7 +402,7 @@ footer {
 }
 .courses-list-page li.expand h2 {
   background-image: url(../images/ico-expand.png);
-  background-size: 20px 17px;
+  background-size: 23px 17px;
 }
 .courses-list-page li.expand dl {
   display: block;
