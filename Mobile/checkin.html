@@ -9,9 +9,9 @@
 <script type="text/javascript">
 $(function(){
 	$(':text[data-role="account-input"]').on('focus', function(){
-		$('.welcome-bg, footer').hide();
-	}).on('blur', function(){
-		$('.welcome-bg, footer').show();
+		setTimeout(function(){
+			$(window).scrollTop(999);
+		}, 500);
 	});
 });
 </script>
