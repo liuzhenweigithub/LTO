@@ -128,7 +128,11 @@ b, strong {
 }
 .page {
 	padding-top: 90px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
+}
+.page.no-footer {
+	padding-bottom: 0;
+	footer {display: none;}
 }
 header {
 	width: 100%;
@@ -173,10 +177,11 @@ footer {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 3px;
+	color: #06476f;
 }
 
 .checkin-page {
-	padding: 5px 15px;
+	padding: 5px 15px 0 15px;
 	.welcome-bg {
 		text-align: center; padding: 5px 0 25px 0;
 		img {display: inline-block; width: 189px; height: 140px;}
@@ -186,24 +191,50 @@ footer {
 		.welcome-to img {display: inline-block; width: 177px; height: 22px;}
 		h2 {font-size: 23px; font-weight: bold; color: @blue;}
 	}
+	.input-field(){
+		width: 73%; min-width: 235px; height: 38px; margin: 0 auto;
+	}
+	.account-input, .password-input {
+		.input-field; line-height: 36px; overflow: hidden; margin: 0 auto 18px auto; border: 1px solid #76AE31; border-radius: 5px;
+		input {width: 94%; margin: 0 3%; border: 0; padding: 0; height: 18px; font-size: 14px; line-height: 18px;}
+	}
 	.account-input {
-		width: 73%; min-width: 235px; height: 38px; overflow: hidden; margin: 0 auto 18px auto; border: 1px solid #76AE31; border-radius: 5px;
 		label {
 			display: block; margin-right: 125px; height: 36px; line-height: 36px;
-			input {width: 94%; margin: 0 0 0 6%; border: 0; padding: 0; height: 18px; font-size: 14px; line-height: 18px;}
 		}
+		input {margin: 0 0 0 6%;}
 		span {
 			display: block; float: right; width: 123px; height: 36px; line-height: 32px;
 			img {width: 113px; height: 19px; display: inline-block; vertical-align: middle;}
 		}
 	}
 	.submit-checkin {
-		width: 73%; min-width: 235px; height: 38px; margin: 0 auto 10px auto;
+		.input-field; margin-bottom: 15px;
 		button {
-			width: 100%; border: 0; background: #42b936; border-radius: 5px; height: 38px; line-height: 38px; font-size: 15px; color: #fff;
+			width: 100%; border: 0; background: #76ae31; border-radius: 5px; height: 38px; line-height: 38px; font-size: 15px; color: #fff;
+		}
+	}
+	.remember-checkbox {
+		.input-field; height: auto; position: relative; font-size: 12px; color: #76ae31;
+		span {
+			vertical-align: middle; display: inline-block;
+		}
+		input[type="checkbox"] {
+			opacity: 0; position: absolute; left: 0; top: 0;
+			& + span {margin-right: 6px; width: 16px; height: 16px; background: url(../images/bg-checkbox.png) no-repeat 0 0; background-size: 16px 32px;}
+			&:checked + span {background-position: 0 -16px;}
 		}
 	}
 }
+.login-page {
+	.account-input, .password-input {
+		margin-bottom: 12px;
+	}
+	.submit-checkin {
+		margin-bottom: 8px;
+	}
+}
+
 
 .checkin-suc-page {
 	padding: 5px 15px;
