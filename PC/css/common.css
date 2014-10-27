@@ -59,7 +59,6 @@ label, input, button {
 
 
 
-
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -115,11 +114,7 @@ body {
 
 #main {
 	margin: 0 19px 0 9px;
-	
-}
-
-#main .contents{
-	background: url(../images/bg_main.png) repeat-y left top;
+	background: url(../images/bg_main.png) no-repeat left top;
 }
 
 #footer {

@@ -3,13 +3,10 @@
 /* CSS Document */
 
 
-#main .mainTop img{
-	display: block;
-	
-}
+
 
 #main .loginBox {
-	padding: 10px 19px 0 24px;
+	padding: 33px 19px 0 24px;
 	overflow: hidden;
 	zoom: 1;
 }
