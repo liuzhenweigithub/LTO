@@ -432,6 +432,10 @@ footer {
   line-height: 1.35em;
   font-size: 12px;
 }
+.checkin-suc-page .info .desc ul {
+  list-style: disc outside;
+  margin-left: 15px;
+}
 .courses-list-page {
   padding: 15px;
 }
