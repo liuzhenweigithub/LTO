@@ -758,5 +758,30 @@
 
 
 .videoList {
+	border-top: 1px solid #dfdfdf;
+	padding: 15px 4px;
+}
 
+.videoList h3 {
+	line-height: 21px;
+	background: url(../images/icon_video.png) no-repeat left top;
+	padding-left: 38px;
+	color: #535353;
+}
+
+.videoList .videoAction {
+	font-weight: bold;
+	float: right;
+	line-height: 21px;
+}
+
+.videoList .videoAction span {
+	display: none;
+}
+
+.mediaBox .greenBtnH30 {
+	line-height: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
