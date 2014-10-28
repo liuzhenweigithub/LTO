@@ -676,17 +676,25 @@
 	margin-bottom: 12px;
 	text-align: center;
 	line-height: 51px;
+	height: 51px;
+	overflow: visible;
 	font-size: 18px;
 	color: #535353;
 	font-family: "century gothic";
 }
 
-.mediaBox .smalImg {
+.mediaBox .smalImg, .mediaBox .smalImg1 {
 	float: left;
 	background: url(../images/bg_img59.png) no-repeat left top;
 	padding: 4px 4px;
 	width: 51px;
 	height: 46px;
+}
+.mediaBox .smalImg1 {
+	background-image: url(../images/bg_img70.png);
+	padding: 5px;
+	width: 60px;
+	height: 54px;
 }
 
 .mediaBox .imgBox {
@@ -702,6 +710,7 @@
 	font-size: 12px;
 	line-height: 1.4;
 	color: #535353;
+	clear: both;
 }
 
 .mediaBox h3 {
@@ -719,3 +728,7 @@
 	border-bottom: 1px solid #dfdfdf
 }
 
+
+.videoList {
+
+}
