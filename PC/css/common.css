@@ -5,6 +5,7 @@ body {
 	text-align: center;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	color: #535353;
 }
 
 * {
@@ -43,10 +44,6 @@ a:hover {
 	color: #76ae31;
 }
 
-a:link {
-	color: #76ae31;
-}
-
 ul li {
 	list-style: none;
 }
@@ -56,6 +53,8 @@ label, input, button {
 }
 
 /* cleafix */
+
+
 
 
 
@@ -114,7 +113,38 @@ body {
 
 #main {
 	margin: 0 19px 0 9px;
-	background: url(../images/bg_main.png) no-repeat left top;
+}
+
+#main .contents {
+	background: url(../images/bg_main.png) repeat-y left top;
+}
+
+#main .topNavi {
+	padding: 13px 44px 0 50px;
+	height: 36px;
+	background: url(../images/bg_top_navi.png) no-repeat left top;
+}
+
+#main .topNavi .greenBtnH27 {
+	float: right;
+	min-width: 86px;
+}
+
+#main .topNavi ul li {
+	float: left;
+	line-height: 27px;
+	margin-right: 60px;
+	font-family: "century gothic";
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main .topNavi ul li a {
+	color: #0f71a4;
+}
+
+#main .topNavi ul li.cur a {
+	color: #76ae31;
 }
 
 #footer {
@@ -142,4 +172,14 @@ body {
 	line-height: 36px;
 	min-width: 103px;
 	border-radius: 1px;
+	display: inline-block;
+	text-align: center;
+}
+
+.greenBtnH27 {
+	line-height: 27px;
+}
+
+.greenBtn:hover {
+	color: #fff;
 }
