@@ -77,10 +77,6 @@ label, input, button {
   /**/
 }
 
-.blue {
-	color: #0b6fa8 !important;
-}
-
 body {
 	background: #fff url(../images/bg_body.png) no-repeat center top;
 	text-align: center;
