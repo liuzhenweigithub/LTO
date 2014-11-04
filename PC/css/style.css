@@ -2,6 +2,8 @@
 
 /* CSS Document */
 
+
+
 #main .mainTop img {
 	display: block;
 }
@@ -136,6 +138,8 @@
 /* checkbox, radio *********************************/
 
 
+
+
 .check-box {
 	display: inline-block;
 	position: relative;
@@ -184,6 +188,8 @@
 }
 
 /*---home sideBar--*/
+
+
 
 
 
@@ -858,4 +864,82 @@
 	height: 30px;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.certificateBoxs {
+	padding: 29px 0 70px 69px;
+	background: url(../images/certificate-bg.png) no-repeat 5px bottom;
+}
+
+.certificateBox {
+	background: #fff none;
+	width: 859px;
+	height: 609px;
+	text-align: left;
+}
+
+.certificateBox img {
+	display: block;
+}
+
+.certificateInner {
+	margin: 40px 60px 11px 55px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.certificateInner .certificateLeft {
+	float: left;
+	width: 232px;
+	margin: 88px 45px 0 0;
+}
+
+.certificateInner .certificateRight {
+	width: 465px;
+	float: right;
+}
+
+.certificateInner .certificateRight h2 {
+	color: #086da7;
+	font-family: "century gothic";
+	font-size: 33px;
+	margin-bottom: 20px;
+}
+
+.certificateInner .certificateRight p {
+	margin-bottom: 40px;
+	color: #0e0e0e;
+	line-height: 1.7;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.certificateInner .certificateRight .greenTitle {
+	margin-bottom: 10px;
+	color: #5fa00e;
+	font-family: "century gothic";
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.certificateInner .certificateRight ul {
+	margin-bottom: 20px;
+	color: #0e0e0e;
+	line-height: 1.7;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.certificateInner .certificateRight ul li {
+	float: left;
+	margin-right: 30px;
+}
+
+.certificateInner .certificateRight ul li span {
+	border-bottom: 1px solid #000;
+	margin-left: 10px;
+	width: 110px;
+	display: inline-block;
 }
