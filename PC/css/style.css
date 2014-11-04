@@ -1,5 +1,7 @@
 @charset "utf-8";
+
 /* CSS Document */
+
 #main .mainTop img {
 	display: block;
 }
@@ -133,6 +135,7 @@
 
 /* checkbox, radio *********************************/
 
+
 .check-box {
 	display: inline-block;
 	position: relative;
@@ -181,6 +184,7 @@
 }
 
 /*---home sideBar--*/
+
 
 
 
@@ -674,6 +678,7 @@
 	width: 51px;
 	height: 46px;
 }
+
 .mediaBox .smalImg1 {
 	background-image: url(../images/bg_img70.png);
 	padding: 5px;
@@ -695,6 +700,61 @@
 	line-height: 1.4;
 	color: #535353;
 	clear: both;
+	margin-top: 3px;
+}
+
+.mediaBox .ptext#title {
+	margin-bottom: 2px;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+.mediaBox ul.list {
+	margin-bottom: 15px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #535353;
+	clear: both;
+	padding-left: 18px;
+	padding-top: 3px;
+}
+
+.mediaBox ul li#list {
+	list-style: inherit;
+}
+
+.mediaBox table.th, td.TbL {
+	margin-bottom: 15px;
+	font-size: 12px;
+	font-weight: bolder;
+	line-height: 1.4;
+	color: #535353;
+	clear: both;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid rgb(5,53,53);
+	border-collapse: collapse
+}
+
+.mediaBox table.th, td.TbL#Nb {
+	border: none;
+	font-weight: normal;
+}
+
+.mediaBox table.th, td.TbR#Nb {
+	border: none;
+}
+
+.mediaBox table.th, td.TbR {
+	margin-bottom: 15px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #535353;
+	clear: both;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid rgb(5,53,53);
+	border-collapse: collapse
 }
 
 .mediaBox h3 {
@@ -705,27 +765,41 @@
 	background: url(../images/bg_line01.png) no-repeat left bottom;
 }
 
-.courseListBox{
+.mediaBox h3#Title {
+	font-size: 16px;
+	padding: 0 0 5px 0;
+	background: none;
+}
+
+.mediaBox hr {
+	width: 100%;
+	border: 0;
+	background-color: #dfdfdf;
+	height: 3px;
+}
+
+.courseListBox {
 	margin-top: 10px;
 	overflow: hidden;
-	zoom:1;
+	zoom: 1;
 }
-.courseListInner{
+
+.courseListInner {
 	margin-top: -1px;
 }
-.mediaBox .courseList{
+
+.mediaBox .courseList {
 	background: url(../images/home_icon03.png) no-repeat left 15px;
 	padding: 15px 0 15px 30px;
 	overflow: hidden;
-	zoom:1;
+	zoom: 1;
 	font-size: 12px;
 	line-height: 1.4;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #535353;
 	border-top: 1px solid #dfdfdf;
-	
-	
 }
+
 .mediaBox .courseList .title {
 	padding-bottom: 2px;
 	margin-bottom: 3px;
@@ -734,28 +808,28 @@
 	color: #535353;
 	border-bottom: 1px solid #dfdfdf;
 	overflow: hidden;
-	zoom:1;
-}
-.mediaBox .courseList .title a{
-	color: #535353;	
+	zoom: 1;
 }
 
-.mediaBox .courseList .title strong{
+.mediaBox .courseList .title a {
+	color: #535353;
+}
+
+.mediaBox .courseList .title strong {
 	margin-bottom: 3px;
 	display: block;
 	font-size: 14px;
 }
 
-.mediaBox .courseList .title .boxl{
+.mediaBox .courseList .title .boxl {
 	float: left;
 	width: 350px;
 }
 
-.mediaBox .courseList .title .boxr{
+.mediaBox .courseList .title .boxr {
 	float: right;
 	text-align: right;
 }
-
 
 .videoList {
 	border-top: 1px solid #dfdfdf;

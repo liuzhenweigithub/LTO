@@ -147,6 +147,7 @@ body {
 	color: #0f71a4;
 }
 
+#main .topNavi ul li a:hover,
 #main .topNavi ul li.cur a {
 	color: #76ae31;
 }
