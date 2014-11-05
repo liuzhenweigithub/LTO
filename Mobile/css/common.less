@@ -1,4 +1,7 @@
 @blue: #06476f;
+@blueMed: #0b6fa8;
+@green: #76ae31;
+@fontColor: #535353;
 
 .clearFix() {
 	&:before, &:after {
@@ -112,6 +115,10 @@ img {
 b, strong {
 	font-weight: 700;
 }
+a {
+	text-decoration: none;
+	&:hover, &:active {text-decoration: none;}
+}
 .clearfix {
 	.clearFix;
 }
@@ -195,7 +202,7 @@ footer {
 		width: 73%; min-width: 235px; height: 38px; margin: 0 auto;
 	}
 	.account-input, .password-input {
-		.input-field; line-height: 36px; overflow: hidden; margin: 0 auto 18px auto; border: 1px solid #76AE31; border-radius: 5px;
+		.input-field; line-height: 36px; overflow: hidden; margin: 0 auto 18px auto; border: 1px solid @green; border-radius: 5px;
 		input {width: 94%; margin: 0 3%; border: 0; padding: 0; height: 18px; font-size: 14px; line-height: 18px;}
 	}
 	.account-input {
@@ -211,11 +218,11 @@ footer {
 	.submit-checkin {
 		.input-field; margin-bottom: 15px;
 		button {
-			width: 100%; border: 0; background: #76ae31; border-radius: 5px; height: 38px; line-height: 38px; font-size: 15px; color: #fff;
+			width: 100%; border: 0; background: @green; border-radius: 5px; height: 38px; line-height: 38px; font-size: 15px; color: #fff;
 		}
 	}
 	.remember-checkbox {
-		.input-field; height: auto; position: relative; font-size: 12px; color: #76ae31;
+		.input-field; height: auto; position: relative; font-size: 12px; color: @green;
 		span {
 			vertical-align: middle; display: inline-block;
 		}
@@ -237,12 +244,77 @@ footer {
 
 
 .home-page {
-	
+	.home-block {
+		padding: 14px 15px;	border-bottom: 1px solid #d2d0cd; color: @fontColor;
+		p {margin-bottom: 8px;}
+	}
+	h2 {
+		font-size: 15px; font-weight: 700; margin-bottom: 12px; line-height: 1.1em; color: @blueMed;
+		&.view-all-title {margin-bottom: 0;
+			a {color: @green;}
+		}
+		&.ico-paper, &.ico-cale {background-repeat: no-repeat; background-size: 16px 17px; height: 17px; line-height: 17px; padding-left: 22px;}
+		&.ico-paper {background-image: url(../images/ico-paper.png);}
+		&.ico-cale {background-image: url(../images/ico-cale.png);}
+	}
+	.account-block {
+		padding-top: 7px;
+		h2 {font-size: 18px; margin-right: 10px; margin-bottom: 0; display: inline-block; vertical-align: middle;}
+		.reward-cont {display: inline-block; vertical-align: middle; font-size: 0;}
+		.reward-green, .reward-gray {
+			display: inline-block; margin-right: 5px; width: 15px; height: 23px; background: url(../images/ico-reward.png) no-repeat; background-size: 30px 23px; overflow: hidden;
+			span {font-size: 3px; color: @green; display: block; padding: 1px;}
+		}
+		.reward-gray {
+			background-position: -15px 0;
+			span {color: #dfdfdf;}
+		}
+	}
+	.course-item {
+		width: 50%; border-right: 1px solid @blueMed; float: left; font-size: 12px; padding-right: 15px; padding-left: 0; margin-bottom: 10px;
+		p {margin-bottom: 5px;}
+		a {color: @fontColor;}
+		&:nth-child(2n+1) {border-right: 0; padding-left: 15px; padding-right: 0;}
+	}
+	.how-to {
+		h3 {font-size: 12px; font-weight: 600; color: #fff; height: 19px; line-height: 19px; padding-left: 20px;}
+		ul {margin-bottom: 8px; padding: 2px 0;}
+		li {font-size: 12px; list-style: disc outside; margin-left: 20px; padding: 3px 0; line-height: 1.2em;}
+		.blue-list h3 {background: @blue;}
+		.blue1-list h3 {background: @blueMed;}
+		.green-list h3 {background: @green;}
+		.blue-list ul {background: #dfecf3;}
+		.blue1-list ul {background: #e0f3f9;}
+		.green-list ul {background: #f5fae7;}
+	}
+	.progress {
+		border-bottom: 0;
+		h3 {font-weight: 600; font-size: 14px; margin-bottom: 5px;}
+		.progress-info {float: right;
+			span {display: block; height: 16px; line-height: 16px; font-size: 12px; width: 18px; text-align: center;}
+			.current-progress {line-height: 15px;}
+		}
+		.progress-bar {width: 92%; background: #fff; border: 1px solid #a0a0a0; height: 32px;
+			.bar {height: 30px; background-size: 30px 31px; background-repeat: repeat;}
+		}
+		.blue-bar {
+			.current-progress {border-bottom: 1px solid @blue;}
+			.progress-bar .bar {background-image: url(../images/bg-proc1.png);}
+		}
+		.blue1-bar {
+			.current-progress {border-bottom: 1px solid @blueMed;}
+			.progress-bar .bar {background-image: url(../images/bg-proc2.png);}
+		}
+		.green-bar {
+			.current-progress {border-bottom: 1px solid @green;}
+			.progress-bar .bar {background-image: url(../images/bg-proc3.png);}
+		}
+	}
 }
 
 .checkin-suc-page {
 	padding: 5px 15px;
-	.title {font-size: 15px; line-height: 19px; margin: 0 0 20px 0; color: #0b6fa8; font-weight: 600;}
+	.title {font-size: 15px; line-height: 19px; margin: 0 0 20px 0; color: @blueMed; font-weight: 600;}
 	.course-logo {
 		text-align: center; margin-bottom: 15px;
 		img {display: inline-block; width: auto; max-width: 60%;}
@@ -250,7 +322,7 @@ footer {
 	.info {
 		table {
 			td, th {padding: 0 0 2px 0; font-size: 14px; line-height: 1.15em; vertical-align: top;}
-			th {text-align: left; width: 27%; color: #0b6fa8; padding-right: 6px;}
+			th {text-align: left; width: 27%; color: @blueMed; padding-right: 6px;}
 			b {display: inline-block; margin-bottom: 6px;}
 		}
 		.desc {
@@ -267,10 +339,10 @@ footer {
 	padding: 15px;
 	li {
 		margin: 0 0 12px 0;
-		a {text-decoration: none; color: #535353;}
-		h2 {font-weight: bold; font-size: 15px; line-height: 1.3em; min-height: 18px; padding-left: 30px; color: #535353; background: url(../images/ico-shrink.png) no-repeat left top; background-size: 20px 17px;}
+		a {text-decoration: none; color: @fontColor;}
+		h2 {font-weight: bold; font-size: 15px; line-height: 1.3em; min-height: 18px; padding-left: 30px; color: @fontColor; background: url(../images/ico-shrink.png) no-repeat left top; background-size: 20px 17px;}
 		dl {
-			display: none; margin-left: 30px; font-size: 12px; color: #535353;
+			display: none; margin-left: 30px; font-size: 12px; color: @fontColor;
 			dt {display: block; margin-top: 10px; background: url(../images/ico-list.png) no-repeat left top; background-size: 14px 12px; line-height: 1.3em; min-height: 16px; font-weight: bold; padding-left: 20px;}
 			dd {margin-top: 3px; line-height: 1.2em;}
 		}

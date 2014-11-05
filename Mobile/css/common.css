@@ -169,6 +169,13 @@ b,
 strong {
   font-weight: 700;
 }
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
 .clearfix:before,
 .clearfix:after {
   content: "\0020";
@@ -282,7 +289,7 @@ footer {
   line-height: 36px;
   overflow: hidden;
   margin: 0 auto 18px auto;
-  border: 1px solid #76AE31;
+  border: 1px solid #76ae31;
   border-radius: 5px;
 }
 .checkin-page .account-input input,
@@ -370,6 +377,187 @@ footer {
 }
 .login-page .submit-checkin {
   margin-bottom: 8px;
+}
+.home-page .home-block {
+  padding: 14px 15px;
+  border-bottom: 1px solid #d2d0cd;
+  color: #535353;
+}
+.home-page .home-block p {
+  margin-bottom: 8px;
+}
+.home-page h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.1em;
+  color: #0b6fa8;
+}
+.home-page h2.view-all-title {
+  margin-bottom: 0;
+}
+.home-page h2.view-all-title a {
+  color: #76ae31;
+}
+.home-page h2.ico-paper,
+.home-page h2.ico-cale {
+  background-repeat: no-repeat;
+  background-size: 16px 17px;
+  height: 17px;
+  line-height: 17px;
+  padding-left: 22px;
+}
+.home-page h2.ico-paper {
+  background-image: url(../images/ico-paper.png);
+}
+.home-page h2.ico-cale {
+  background-image: url(../images/ico-cale.png);
+}
+.home-page .account-block {
+  padding-top: 7px;
+}
+.home-page .account-block h2 {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.home-page .account-block .reward-cont {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+.home-page .account-block .reward-green,
+.home-page .account-block .reward-gray {
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  height: 23px;
+  background: url(../images/ico-reward.png) no-repeat;
+  background-size: 30px 23px;
+  overflow: hidden;
+}
+.home-page .account-block .reward-green span,
+.home-page .account-block .reward-gray span {
+  font-size: 3px;
+  color: #76ae31;
+  display: block;
+  padding: 1px;
+}
+.home-page .account-block .reward-gray {
+  background-position: -15px 0;
+}
+.home-page .account-block .reward-gray span {
+  color: #dfdfdf;
+}
+.home-page .course-item {
+  width: 50%;
+  border-right: 1px solid #0b6fa8;
+  float: left;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.home-page .course-item p {
+  margin-bottom: 5px;
+}
+.home-page .course-item a {
+  color: #535353;
+}
+.home-page .course-item:nth-child(2n+1) {
+  border-right: 0;
+  padding-left: 15px;
+  padding-right: 0;
+}
+.home-page .how-to h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  height: 19px;
+  line-height: 19px;
+  padding-left: 20px;
+}
+.home-page .how-to ul {
+  margin-bottom: 8px;
+  padding: 2px 0;
+}
+.home-page .how-to li {
+  font-size: 12px;
+  list-style: disc outside;
+  margin-left: 20px;
+  padding: 3px 0;
+  line-height: 1.2em;
+}
+.home-page .how-to .blue-list h3 {
+  background: #06476f;
+}
+.home-page .how-to .blue1-list h3 {
+  background: #0b6fa8;
+}
+.home-page .how-to .green-list h3 {
+  background: #76ae31;
+}
+.home-page .how-to .blue-list ul {
+  background: #dfecf3;
+}
+.home-page .how-to .blue1-list ul {
+  background: #e0f3f9;
+}
+.home-page .how-to .green-list ul {
+  background: #f5fae7;
+}
+.home-page .progress {
+  border-bottom: 0;
+}
+.home-page .progress h3 {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.home-page .progress .progress-info {
+  float: right;
+}
+.home-page .progress .progress-info span {
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  width: 18px;
+  text-align: center;
+}
+.home-page .progress .progress-info .current-progress {
+  line-height: 15px;
+}
+.home-page .progress .progress-bar {
+  width: 92%;
+  background: #fff;
+  border: 1px solid #a0a0a0;
+  height: 32px;
+}
+.home-page .progress .progress-bar .bar {
+  height: 30px;
+  background-size: 30px 31px;
+  background-repeat: repeat;
+}
+.home-page .progress .blue-bar .current-progress {
+  border-bottom: 1px solid #06476f;
+}
+.home-page .progress .blue-bar .progress-bar .bar {
+  background-image: url(../images/bg-proc1.png);
+}
+.home-page .progress .blue1-bar .current-progress {
+  border-bottom: 1px solid #0b6fa8;
+}
+.home-page .progress .blue1-bar .progress-bar .bar {
+  background-image: url(../images/bg-proc2.png);
+}
+.home-page .progress .green-bar .current-progress {
+  border-bottom: 1px solid #76ae31;
+}
+.home-page .progress .green-bar .progress-bar .bar {
+  background-image: url(../images/bg-proc3.png);
 }
 .checkin-suc-page {
   padding: 5px 15px;
