@@ -414,7 +414,7 @@ footer {
   background-image: url(../images/ico-cale.png);
 }
 .home-page .account-block {
-  padding-top: 7px;
+  padding-top: 10px;
 }
 .home-page .account-block h2 {
   font-size: 18px;
@@ -436,14 +436,15 @@ footer {
   height: 23px;
   background: url(../images/ico-reward.png) no-repeat;
   background-size: 30px 23px;
-  overflow: hidden;
 }
 .home-page .account-block .reward-green span,
 .home-page .account-block .reward-gray span {
-  font-size: 3px;
+  font-size: 10px;
   color: #76ae31;
   display: block;
-  padding: 1px;
+  width: 14px;
+  text-align: center;
+  margin-top: -10px;
 }
 .home-page .account-block .reward-gray {
   background-position: -15px 0;
@@ -650,4 +651,65 @@ footer {
 }
 .courses-list-page li.expand dl {
   display: block;
+}
+.cert-page {
+  padding: 0 30px 55px 30px;
+}
+.cert-page .welcome-bg {
+  width: 150px;
+  margin: 10px auto;
+}
+.cert-page h2 {
+  font-size: 20px;
+  color: #0b6fa8;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+}
+.cert-page h3 {
+  font-size: 18px;
+  color: #76ae31;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+.cert-page p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.cert-page .signature {
+  margin-top: 30px;
+  font-size: 10px;
+}
+.cert-page .signature label {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.cert-page .signature span {
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #c8c8c8;
+  min-width: 60px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.cert-page .signature span:nth-child(2n) {
+  margin-right: 15px;
+}
+.cert-footer {
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.cert-footer img {
+  display: inline-block;
+  vertical-align: bottom;
 }
