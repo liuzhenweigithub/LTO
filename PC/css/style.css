@@ -3,6 +3,7 @@
 /*homepage 页面*/
 
 
+
 #main .mainTop img {
 	display: block;
 }
@@ -140,6 +141,7 @@
 
 
 
+
 .loginBox .check-box {
 	display: inline-block;
 	position: relative;
@@ -188,6 +190,7 @@
 }
 
 /*---home sideBar 右侧导航栏--*/
+
 
 .contBox {
 	padding: 0 44px 0;
@@ -357,6 +360,7 @@
 /*内容左侧样式*/
 
 
+
 .conts {
 	margin-top: 30px;
 	float: right;
@@ -368,6 +372,7 @@
 }
 
 /*页面蓝色的标题的样式*/
+
 
 
 .conts .blueBack {
@@ -413,6 +418,7 @@
 }
 
 /*home licenOpera*/
+
 
 .conts .licenOpera {
 	padding-bottom: 22px;
@@ -505,6 +511,7 @@
 
 /*home homeListNum*/
 
+
 .homeListNum {
 	margin-top: 30px;
 	background: url(../images/home_box_bg02.png) no-repeat left bottom;
@@ -583,6 +590,7 @@
 
 /*course页面的样式*/
 
+
 .proBox {
 	padding-top: 10px;
 	clear: both;
@@ -654,6 +662,7 @@
 
 /*course  分页的样式*/
 
+
 .pages {
 	font-size: 14px;
 	color: #535353;
@@ -667,6 +676,7 @@
 }
 
 /*mediaBox的样式*/
+
 
 .topImg img {
 	display: block;
@@ -879,6 +889,7 @@
 
 /*certificateBoxs*/
 
+
 .certificateBoxs {
 	padding: 29px 0 70px 69px;
 	background: url(../images/certificate-bg.png) no-repeat 5px bottom;
@@ -955,4 +966,20 @@
 	margin-left: 10px;
 	width: 110px;
 	display: inline-block;
+}
+/*打印的样式*/
+@media print {
+
+body {
+	background: none;
+}
+
+.topNavi {
+	display: none
+}
+
+#main .contents {
+	margin: 0 auto;
+	background: none;
+}
 }
