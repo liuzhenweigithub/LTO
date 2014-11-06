@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-/* CSS Document */
-
+/*homepage 页面*/
 
 
 #main .mainTop img {
@@ -31,7 +30,7 @@
 	margin-bottom: 39px;
 }
 
-.loginFormIpt {
+.loginBox .loginFormIpt {
 	margin-bottom: 28px;
 	height: 19px;
 	padding: 9px 12px 8px 15px;
@@ -45,7 +44,7 @@
 	zoom: 1;
 }
 
-.ico-uid {
+.loginBox .ico-uid {
 	background: url(../images/icon01.png) no-repeat left top;
 	width: 15px;
 	margin-right: 5px;
@@ -54,7 +53,7 @@
 	float: left;
 }
 
-.loginFormIpt input.nameInput {
+.loginBox .loginFormIpt input.nameInput {
 	border: none;
 	float: left;
 	width: 85px;
@@ -65,7 +64,7 @@
 	color: #7d7d7d;
 }
 
-.loginFormIpt .domain {
+.loginBox .loginFormIpt .domain {
 	float: right;
 	font-size: 12px;
 	color: #0b6fa8;
@@ -73,7 +72,7 @@
 	font-family: "century gothic";
 }
 
-.loginFormPsw {
+.loginBox .loginFormPsw {
 	margin-bottom: 34px;
 	height: 38px;
 	padding: 0 12px 0 15px;
@@ -86,7 +85,7 @@
 	zoom: 1;
 }
 
-.loginFormPsw input {
+.loginBox .loginFormPsw input {
 	border: none;
 	outline: none;
 	line-height: 38px;
@@ -99,7 +98,7 @@
 	font-family: "century gothic";
 }
 
-.ico-pwd {
+.loginBox .ico-pwd {
 	background: url(../images/icon02.png) no-repeat left center;
 	width: 15px;
 	margin-right: 5px;
@@ -109,24 +108,24 @@
 	color: #a5adbe;
 }
 
-.dic {
+.loginBox .dic {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #9d9d9d;
 	line-height: 1.6;
 }
 
-.checkBtn {
+.loginBox .checkBtn {
 	clear: both;
 	overflow: hidden;
 	zoom: 1;
 }
 
-.boxLeft {
+.loginBox .boxLeft {
 	float: left;
 }
 
-.boxRight {
+.loginBox .boxRight {
 	float: right;
 }
 
@@ -140,14 +139,15 @@
 
 
 
-.check-box {
+
+.loginBox .check-box {
 	display: inline-block;
 	position: relative;
 	width: 16px;
 	height: 17px;
 }
 
-.check-box input {
+.loginBox .check-box input {
 	opacity: 0;
 	cursor: pointer;
 	position: absolute;
@@ -161,7 +161,7 @@
 	outline: none;
 }
 
-.check-box em {
+.loginBox .check-box em {
 	position: absolute;
 	background: url(../images/bg_checkbox.png) no-repeat left top;
 	width: 16px;
@@ -170,11 +170,11 @@
 	left: 0;
 }
 
-.check-box input:checked + em {
+.loginBox .check-box input:checked + em {
 	background: url(../images/bg_checkbox_checked.png) no-repeat left top;
 }
 
-.checkText {
+.loginBox .checkText {
 	margin-bottom: 4px;
 	font-size: 11px;
 	line-height: 17px;
@@ -182,17 +182,12 @@
 	color: #a5adbe;
 }
 
-.checkText .check-box {
+.loginBox .checkText .check-box {
 	margin-right: 9px;
 	float: left;
 }
 
-/*---home sideBar--*/
-
-
-
-
-
+/*---home sideBar 右侧导航栏--*/
 
 .contBox {
 	padding: 0 44px 0;
@@ -285,6 +280,83 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.sideBar .sideNavi {
+	margin-bottom: 30px;
+	background: url(../images/home_left_bg01.png) no-repeat left bottom;
+	padding: 0 4px 4px;
+	font-family: "century gothic";
+	font-weight: bold;
+}
+
+.sideBar .sideNavi li a {
+	line-height: 48px;
+	height: 48px;
+	background: url(../images/icon04.png) no-repeat 15px center;
+	padding-left: 50px;
+	color: #535353;
+	font-size: 14px;
+	display: block;
+	border-top: 1px solid #dfdfdf;
+	position: relative;
+	z-index: 999;
+}
+
+.sideBar .sideNavi li a .hoverText {
+	position: absolute;
+	line-height: 1.5;
+	width: 172px;
+	left: 208px;
+	padding: 15px 8px;
+	top: -1px;
+	background-color: #e7e7e7;
+	display: none;
+	font-size: 11px;
+	color: #535353;
+	font-weight: normal;
+	opacity: 0.8;
+}
+
+.sideBar .sideNavi li.cur a, .sideBar .sideNavi li a:hover {
+	background: #0b6fa8 url(../images/icon03.png) no-repeat 15px center;
+	border-top: 1px solid #0b6fa8;
+	color: #fff;
+}
+
+.sideBar .sideNavi li a:hover .hoverText {
+	display: block;
+	color: #535353;
+}
+
+.sideBar .searchBox {
+	border: 1px solid #76ae31;
+	height: 31px;
+	width: 209px;
+}
+
+.sideBar .searchBox .inputBox {
+	border: none;
+	outline: none;
+	line-height: 31px;
+	height: 29px;
+	color: #dfdfdf;
+	font-size: 12px;
+	font-family: "century gothic";
+	padding-left: 10px;
+	width: 165px;
+}
+
+.sideBar .searchBox .searchBtn {
+	border: none;
+	outline: none;
+	height: 31px;
+	width: 34px;
+	float: right;
+	background: url(../images/icon_search.png) no-repeat left top;
+}
+
+/*内容左侧样式*/
+
+
 .conts {
 	margin-top: 30px;
 	float: right;
@@ -294,6 +366,9 @@
 .mt10 {
 	margin-top: 15px;
 }
+
+/*页面蓝色的标题的样式*/
+
 
 .conts .blueBack {
 	line-height: 41px;
@@ -336,6 +411,8 @@
 .w665 span a.cur {
 	color: #27a8cf;
 }
+
+/*home licenOpera*/
 
 .conts .licenOpera {
 	padding-bottom: 22px;
@@ -426,6 +503,8 @@
 	text-indent: -10px;
 }
 
+/*home homeListNum*/
+
 .homeListNum {
 	margin-top: 30px;
 	background: url(../images/home_box_bg02.png) no-repeat left bottom;
@@ -502,79 +581,7 @@
 	background: url(../images/home_green_bg01.png) repeat left top;
 }
 
-.sideBar .sideNavi {
-	margin-bottom: 30px;
-	background: url(../images/home_left_bg01.png) no-repeat left bottom;
-	padding: 0 4px 4px;
-	font-family: "century gothic";
-	font-weight: bold;
-}
-
-.sideBar .sideNavi li a {
-	line-height: 48px;
-	height: 48px;
-	background: url(../images/icon04.png) no-repeat 15px center;
-	padding-left: 50px;
-	color: #535353;
-	font-size: 14px;
-	display: block;
-	border-top: 1px solid #dfdfdf;
-	position: relative;
-	z-index: 999;
-}
-
-.sideBar .sideNavi li a .hoverText {
-	position: absolute;
-	line-height: 1.5;
-	width: 172px;
-	left: 208px;
-	padding: 15px 8px;
-	top: -1px;
-	background-color: #e7e7e7;
-	display: none;
-	font-size: 11px;
-	color: #535353;
-	font-weight: normal;
-	opacity: 0.8;
-}
-
-.sideBar .sideNavi li.cur a, .sideBar .sideNavi li a:hover {
-	background: #0b6fa8 url(../images/icon03.png) no-repeat 15px center;
-	border-top: 1px solid #0b6fa8;
-	color: #fff;
-}
-
-.sideBar .sideNavi li a:hover .hoverText {
-	display: block;
-	color: #535353;
-}
-
-.sideBar .searchBox {
-	border: 1px solid #76ae31;
-	height: 31px;
-	width: 209px;
-}
-
-.sideBar .searchBox .inputBox {
-	border: none;
-	outline: none;
-	line-height: 31px;
-	height: 29px;
-	color: #dfdfdf;
-	font-size: 12px;
-	font-family: "century gothic";
-	padding-left: 10px;
-	width: 165px;
-}
-
-.sideBar .searchBox .searchBtn {
-	border: none;
-	outline: none;
-	height: 31px;
-	width: 34px;
-	float: right;
-	background: url(../images/icon_search.png) no-repeat left top;
-}
+/*course页面的样式*/
 
 .proBox {
 	padding-top: 10px;
@@ -645,6 +652,8 @@
 	font-size: 14px;
 }
 
+/*course  分页的样式*/
+
 .pages {
 	font-size: 14px;
 	color: #535353;
@@ -657,15 +666,17 @@
 	color: #76ae31;
 }
 
+/*mediaBox的样式*/
+
+.topImg img {
+	display: block;
+}
+
 .mediaBox {
 	background: url(../images/home_box_bg02.png) no-repeat left bottom;
 	overflow: hidden;
 	zoom: 1;
 	padding: 0 29px 30px 29px;
-}
-
-.topImg img {
-	display: block;
 }
 
 .mediaBox h2 {
@@ -784,13 +795,13 @@
 	height: 3px;
 }
 
-.courseListBox {
+.mediaBox .courseListBox {
 	margin-top: 10px;
 	overflow: hidden;
 	zoom: 1;
 }
 
-.courseListInner {
+.mediaBox .courseListInner {
 	margin-top: -1px;
 }
 
@@ -837,25 +848,25 @@
 	text-align: right;
 }
 
-.videoList {
+.mediaBox .videoList {
 	border-top: 1px solid #dfdfdf;
 	padding: 15px 4px;
 }
 
-.videoList h3 {
+.mediaBox .videoList h3 {
 	line-height: 21px;
 	background: url(../images/icon_video.png) no-repeat left top;
 	padding-left: 38px;
 	color: #535353;
 }
 
-.videoList .videoAction {
+.mediaBox .videoList .videoAction {
 	font-weight: bold;
 	float: right;
 	line-height: 21px;
 }
 
-.videoList .videoAction span {
+.mediaBox .videoList .videoAction span {
 	display: none;
 }
 
@@ -865,6 +876,8 @@
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+/*certificateBoxs*/
 
 .certificateBoxs {
 	padding: 29px 0 70px 69px;
