@@ -440,6 +440,7 @@ footer {
 .home-page .account-block .reward-green span,
 .home-page .account-block .reward-gray span {
   font-size: 10px;
+  -webkit-text-size-adjust: none;
   color: #76ae31;
   display: block;
   width: 14px;

@@ -167,7 +167,7 @@ body {
 	background-color: #e1fbfb;
 }
 
-.greenBtn {
+.greenBtn, .grayBtn {
 	background-color: #76ae31;
 	color: #fff;
 	border: none;
@@ -188,4 +188,8 @@ body {
 
 .greenBtn:hover {
 	color: #fff;
+}
+
+.grayBtn {
+	background-color: #ccc;
 }
