@@ -4,6 +4,8 @@
 
 
 
+
+
 #main .mainTop img {
 	display: block;
 }
@@ -142,6 +144,8 @@
 
 
 
+
+
 .loginBox .check-box {
 	display: inline-block;
 	position: relative;
@@ -190,6 +194,8 @@
 }
 
 /*---home sideBar 右侧导航栏--*/
+
+
 
 
 .contBox {
@@ -243,6 +249,7 @@
 	color: #76ae31;
 	display: inline-block;
 }
+
 .sideBar .welBox ul li.grayBack span {
 	color: #dfdfdf;
 }
@@ -376,6 +383,8 @@
 
 
 
+
+
 .conts {
 	margin-top: 30px;
 	float: right;
@@ -387,6 +396,8 @@
 }
 
 /*页面蓝色的标题的样式*/
+
+
 
 
 
@@ -433,6 +444,8 @@
 }
 
 /*home licenOpera*/
+
+
 
 
 .conts .licenOpera {
@@ -527,6 +540,8 @@
 /*home homeListNum*/
 
 
+
+
 .homeListNum {
 	margin-top: 30px;
 	background: url(../images/home_box_bg02.png) no-repeat left bottom;
@@ -606,6 +621,8 @@
 /*course页面的样式*/
 
 
+
+
 .proBox {
 	padding-top: 10px;
 	clear: both;
@@ -678,6 +695,8 @@
 /*course  分页的样式*/
 
 
+
+
 .pages {
 	font-size: 14px;
 	color: #535353;
@@ -693,6 +712,8 @@
 /*mediaBox的样式*/
 
 
+
+
 .topImg img {
 	display: block;
 }
@@ -704,6 +725,7 @@
 	position: relative;
 	min-height: 1px;
 }
+
 .mediaBox:after {
 	content: " ";
 	display: block;
@@ -914,6 +936,7 @@
 	text-align: center;
 	display: none;
 }
+
 .mediaBox .videoCont .video {
 	margin: 0 auto 10px auto;
 	width: 340px;
@@ -924,6 +947,7 @@
 	position: relative;
 	overflow: hidden;
 }
+
 .video .mejs-time-rail .mask {
 	position: absolute;
 	display: block;
@@ -941,6 +965,7 @@
 	height: 100%;
 	display: none;
 }
+
 .exerMask {
 	position: absolute;
 	top: 0;
@@ -960,6 +985,7 @@
 	width: 581px;
 	background: url(../images/bg_exercise.png) no-repeat center top;
 }
+
 .exerBoxTitle {
 	padding: 10px 20px;
 	font-family: "century gothic";
@@ -967,6 +993,7 @@
 	font-weight: bold;
 	color: #fff;
 }
+
 .closeExerBox {
 	display: inline-block;
 	float: right;
@@ -975,19 +1002,24 @@
 	background: url(../images/ico_closeexer.png) no-repeat;
 	margin: 3px 20px 0 0;
 }
+
 .exerBoxCont {
 	padding: 20px 45px 35px 52px;
 	font-size: 12px;
 }
+
 .exerList dt {
 	margin: 12px 0 8px 0;
 }
+
 .exerList dd {
 	margin: 3px 0 3px 8px;
 }
+
 .exerList p {
 	margin-left: 20px;
 }
+
 .exerList label {
 	float: left;
 	display: block;
@@ -996,18 +1028,21 @@
 	min-width: 15px;
 	overflow: hidden;
 }
+
 .exerSubmit {
 	text-align: right;
 	margin-top: 15px;
 	margin-right: 10px;
 }
+
 .exerSubmit button {
 	margin-left: 20px;
 	min-width: 90px;
 }
 
-
 /*certificateBoxs*/
+
+
 
 
 .certificateBoxs {
@@ -1089,29 +1124,48 @@
 	display: inline-block;
 }
 
+/*digitalHub*/
 
 
-
-.mediaBox h3.h3One {
+.digitalHub h3.h3One {
 	padding: 0;
 	overflow: hidden;
 	zoom: 1;
 }
 
-.mediaBox h3.h3One span {
+.digitalHub h3.h3One span {
 	border-bottom: 3px solid #76ae31;
 	padding: 0 0 10px 0;
 	display: block;
 	float: left;
 }
 
-.mediaBox .hubLogo {
-	margin-left: 20px;
-	margin-top: 20px;
+.digitalHub .hubText {
+	font-size: 14px;
+	line-height: 1.7;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 30px;
 }
 
-.mediaBox .hubLogo li {
-	margin-bottom: 5px;
+.digitalHub .hubList {
+	padding-left: 15px;
+	line-height: 1.7;
+	font-size: 14px;
+}
+
+.digitalHub .hubList li {
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: disc;
+}
+
+.digitalHub .hubLogo {
+	margin: 20px 0 7px 20px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.digitalHub .hubLogo li {
+	padding-bottom: 20px;
 	float: left;
 	width: 270px;
 	line-height: 26px;
@@ -1120,9 +1174,13 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.mediaBox .hubLogo li .imgBox {
+.digitalHub .hubLogo li .imgs {
 	float: left;
 	width: 66px;
+}
+
+.digitalHub .hubLogo li .imgs img {
+	display: block;
 }
 
 .mediaBox .hubLogo li p.text {
@@ -1133,6 +1191,6 @@
 	font-weight: bold;
 }
 
-.mediaBox .hubLogo li p.text a {
+.digitalHub .hubLogo li p.text a {
 	color: #535353;
 }
