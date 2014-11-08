@@ -167,7 +167,7 @@ body {
 	background-color: #e1fbfb;
 }
 
-.greenBtn, .grayBtn {
+.greenBtn, .grayBtn, .whiteBtn {
 	background-color: #76ae31;
 	color: #fff;
 	border: none;
@@ -182,9 +182,9 @@ body {
 	font-family: "century gothic";
 }
 
-.greenBtnH27 {
+.greenBtnH27, .btnH27 {
 	line-height: 27px;
-}
+} 
 
 .greenBtn:hover {
 	color: #fff;
@@ -192,4 +192,11 @@ body {
 
 .grayBtn {
 	background-color: #ccc;
+}
+
+.whiteBtn {
+	border: 1px solid #76ae31;
+	background-color: #dfdfdf;
+	color: #76ae31;
+	line-height: 25px;
 }

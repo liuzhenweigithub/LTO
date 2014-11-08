@@ -37,7 +37,7 @@ $(function(){
 		return false;
 	});
 
-	$('.closeExerBox').on('click', function(){
+	$('[data-role="closeExerBox"]').on('click', function(){
 		$('.exerciseContainer').hide();
 		return false;
 	});
@@ -45,6 +45,7 @@ $(function(){
 
 function showExercise(){
 	var exer = $('.exerciseContainer').show();
+	exer.height(exer.height() + 13);
 	exer.find('.exerBox').css('top', (exer.height() - exer.find('.exerBox').height()) / 2 + 'px');
 }
 </script>
@@ -119,13 +120,32 @@ function showExercise(){
 						<div class="exerciseContainer">
 							<div class="exerMask"></div>
 							<div class="exerBox">
-								<div class="exerBoxTitle"><a href="#" class="closeExerBox">&nbsp;</a>
+								<div class="exerBoxTitle"><a href="#" class="closeExerBox" data-role="closeExerBox">&nbsp;</a>
 									Exercise: CB4L Media College
 								</div>
-								<div class="exerBoxCont">
-									
-
-								</div>
+								<form class="exerBoxCont" action="" autocomplete="off">
+									<div class="exerList">
+										<dl>
+											<dt>Q1. Socratic irony is...</dt>
+											<dd><label><input type="checkbox"></label><p>Admit one's own errors to invite one's interlocutor to do the same.</p></dd>
+											<dd><label><input type="checkbox"></label><p>Compel one's interlocutor, by a series of questions and sub-questions, to admit he doesn't know what he claims to know.</p></dd>
+											<dd><label><input type="checkbox"></label><p>Ridiculise one's interlocutor in order to have him concede he is wrong.</p></dd>
+											<dd><label><input type="checkbox"></label><p>Use the Principle of Non Contradiction to force one's interlocutor into a dead end.</p></dd>
+											<dt>Q2. Socratic irony is...</dt>
+											<dd><label><input type="checkbox"></label><p>Ridiculise one's interlocutor in order to have him concede he is wrong.</p></dd>
+											<dd><label><input type="checkbox"></label><p>Admit one's own errors to invite one's interlocutor to do the same. Compel one's interlocutor, by a series of questions and sub-questions, to admit </p></dd>
+											<dd><label><input type="checkbox"></label><p>he doesn't know what he claims to know.</p></dd>
+											<dd><label><input type="checkbox"></label><p>Use the Principle of Non Contradiction to force one's interlocutor into a dead end.</p></dd>
+											<dt>Q3. Socratic irony is to admit one's own errors to invite one's interlocutor to do the same.</dt>
+											<dd><label><input type="checkbox"></label><p>True</p></dd>
+											<dd><label><input type="checkbox"></label><p>False</p></dd>
+										</dl>
+									</div>
+									<div class="exerSubmit">
+										<button class="greenBtn btnH27" type="submit">Submit</button>
+										<button class="whiteBtn" type="button" data-role="closeExerBox">Cancel</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
