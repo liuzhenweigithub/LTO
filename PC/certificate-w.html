@@ -5,6 +5,36 @@
 <title>certificate-w</title>
 <link type="text/css" href="css/common.css" rel="stylesheet">
 <link type="text/css" href="css/style.css" rel="stylesheet">
+<style type="text/css">
+/*打印的样式*/
+@media print {
+	@page {
+        size: landscape;
+    }
+
+	body {
+		background: none;
+	}
+
+	.topNavi {
+		display: none
+	}
+
+	#main .contents {
+		margin: 0 auto;
+		background: none;
+		/*transform: rotate(90deg) translate(200px, 0);*/
+	}
+
+	#footer {
+		display: none;
+	}
+
+	.certificateBox {
+		border-bottom: 3px solid #0b6fa8;
+	}
+}
+</style>
 </head>
 <body>
 <div id="wrap">
@@ -17,7 +47,7 @@
 					<div class="certificateInner">
 						<div class="certificateLeft"><img src="images/certificate-w_img01.png" alt="" width="232"></div>
 						<div class="certificateRight">
-							<h2>2014 Digital License To Operate Certificate</h2>
+							<h2>2014 Digital License To Operate<br>Certificate</h2>
 							<p class="greenTitle">Cathy Lu, Congratulations!</p>
 							<p>Based on Brand Building WL2 digital skills requirement, you are officially certified 2014 Digital License To Operate!<br>
 								Wish you all the best and stay ahead in digital world.</p>
@@ -27,13 +57,15 @@
 							</ul>
 						</div>
 					</div>
-					<img src="images/certificate-w_img02.png" alt="" width="859"> </div>
-				
+					<!-- <img src="images/certificate-w_img02.png" alt="" width="859"> -->
+				</div>
 				<!--endprint--> 
 			</div>
 		</div>
 	</div>
-	<div id="footer"> </div>
+	<div id="footer">
+		<p>&copy; 2014 Unilever. Led by China Digital Marketing &amp; Operation Team</p>
+	</div>
 </div>
 </body>
 </html>

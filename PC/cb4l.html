@@ -5,9 +5,9 @@
 <title>courses</title>
 <link type="text/css" href="css/common.css" rel="stylesheet">
 <link type="text/css" href="css/style.css" rel="stylesheet">
-<link type="text/css" href="jme/mediaelementplayer.css" rel="stylesheet">
+<link type="text/css" href="jme1/mediaelementplayer.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="jme/mediaelement-and-player.min.js"></script>
+<script src="jme1/mediaelement-and-player.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('.videoAction a').on('click', function(){
@@ -15,12 +15,16 @@ $(function(){
 		a.hide().next('span').show();
 		li.find('.videoCont').show();
 		li.find('video').mediaelementplayer({
-			success: function(player, node) {
+			mode: 'shim',
+			success: function(media, node, player) {
 				player.play();
+				media.addEventListener('ended', function(e) {
+					li.data('videoEnded', true);
+					checkVideoEnded();
+				});
 				setTimeout(function(){
-					setTimeout(function(){
-						$('#goExercise').removeClass('grayBtn');
-					}, (player.duration - 1) * 1000);
+					var rail = li.find('.mejs-time-rail');
+					rail.append('<span class="mask"></span>');
 				}, 500);
 			}
 		});
@@ -42,6 +46,16 @@ $(function(){
 		return false;
 	});
 });
+
+function checkVideoEnded(){
+	var ended = true;
+	$('.videoList li').each(function(){
+		ended = ended && ($.data(this, 'videoEnded') || false);
+	});
+	if( ended == true ){
+		$('#goExercise').removeClass('grayBtn');
+	}
+}
 
 function showExercise(){
 	var exer = $('.exerciseContainer').show();
@@ -77,7 +91,7 @@ function showExercise(){
 						<li><a href="#">Elite Courses
 							<p class="hoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
 							</a></li>
-						<li><a href="#">Inspirating Courses
+						<li><a href="#">Inspiring Courses
 							<p class="hoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et </p>
 							</a></li>
 					</ul>
@@ -103,7 +117,7 @@ function showExercise(){
 								<h3>Video 1: We're in a new era of marketing</h3>
 								<div class="videoCont">
 									<div class="video">
-										<video src="jme/demo.mp4" height="220" width="340" type="video/mp4"></video>
+										<video src="jme1/demo.flv" height="220" width="340" type="video/flv"></video>
 									</div>
 								</div>
 							</li>
@@ -111,7 +125,7 @@ function showExercise(){
 								<h3>Video 2: How is big data reshaping marketing</h3>
 								<div class="videoCont">
 									<div class="video">
-										<video src="jme/demo.mp4" height="220" width="340" type="video/mp4"></video>
+										<video src="jme1/demo.flv" height="220" width="340" type="video/flv"></video>
 									</div>
 								</div>
 							</li>
