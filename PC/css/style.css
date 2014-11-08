@@ -4,6 +4,7 @@
 
 
 
+
 #main .mainTop img {
 	display: block;
 }
@@ -142,6 +143,7 @@
 
 
 
+
 .loginBox .check-box {
 	display: inline-block;
 	position: relative;
@@ -190,6 +192,7 @@
 }
 
 /*---home sideBar 右侧导航栏--*/
+
 
 
 .contBox {
@@ -299,14 +302,21 @@
 	font-weight: bold;
 }
 
-.sideBar .sideNavi li a {
-	line-height: 48px;
+.sideBar .sideNavi li {
 	height: 48px;
+}
+
+.sideBar .sideNavi li a {
+	padding: 5px 0 5px 50px;
 	background: url(../images/icon04.png) no-repeat 15px center;
-	padding-left: 50px;
 	color: #535353;
 	font-size: 14px;
-	display: block;
+	width: 158px;
+	display: table-cell;
+ *display:block;
+	_display: block;
+	height: 38px;
+	vertical-align: middle;
 	border-top: 1px solid #dfdfdf;
 	position: relative;
 	z-index: 999;
@@ -369,6 +379,7 @@
 
 
 
+
 .conts {
 	margin-top: 30px;
 	float: right;
@@ -380,6 +391,7 @@
 }
 
 /*页面蓝色的标题的样式*/
+
 
 
 
@@ -426,6 +438,7 @@
 }
 
 /*home licenOpera*/
+
 
 
 .conts .licenOpera {
@@ -520,6 +533,7 @@
 /*home homeListNum*/
 
 
+
 .homeListNum {
 	margin-top: 30px;
 	background: url(../images/home_box_bg02.png) no-repeat left bottom;
@@ -599,6 +613,7 @@
 /*course页面的样式*/
 
 
+
 .proBox {
 	padding-top: 10px;
 	clear: both;
@@ -671,6 +686,7 @@
 /*course  分页的样式*/
 
 
+
 .pages {
 	font-size: 14px;
 	color: #535353;
@@ -684,6 +700,7 @@
 }
 
 /*mediaBox的样式*/
+
 
 
 .topImg img {
@@ -990,6 +1007,7 @@
 /*certificateBoxs*/
 
 
+
 .certificateBoxs {
 	padding: 29px 0 70px 69px;
 	background: url(../images/certificate-bg.png) no-repeat 5px bottom;
@@ -1082,4 +1100,52 @@ body {
 	margin: 0 auto;
 	background: none;
 }
+}
+
+/**/
+
+
+.mediaBox h3.h3One {
+	padding: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.mediaBox h3.h3One span {
+	border-bottom: 3px solid #76ae31;
+	padding: 0 0 10px 0;
+	display: block;
+	float: left;
+}
+
+.mediaBox .hubLogo {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.mediaBox .hubLogo li {
+	margin-bottom: 5px;
+	float: left;
+	width: 270px;
+	line-height: 26px;
+	font-size: 14px;
+	color: #535353;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mediaBox .hubLogo li .imgBox {
+	float: left;
+	width: 66px;
+}
+
+.mediaBox .hubLogo li p.text {
+	padding-left: 17px;
+	margin-top: 6px;
+	border-left: 1px solid #76ae31;
+	float: left;
+	font-weight: bold;
+}
+
+.mediaBox .hubLogo li p.text a {
+	color: #535353;
 }
