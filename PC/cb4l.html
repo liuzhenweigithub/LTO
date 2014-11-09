@@ -45,6 +45,14 @@ $(function(){
 		$('.exerciseContainer').hide();
 		return false;
 	});
+
+	$('#formExer').on('submit', function(){
+		if( $('input:checked', this).length == 0 ){
+			alert('Please finished the exercise!');
+			return false;
+		}
+		return true;
+	});
 });
 
 function checkVideoEnded(){
@@ -137,7 +145,7 @@ function showExercise(){
 								<div class="exerBoxTitle"><a href="#" class="closeExerBox" data-role="closeExerBox">&nbsp;</a>
 									Exercise: CB4L Media College
 								</div>
-								<form class="exerBoxCont" action="" autocomplete="off">
+								<form class="exerBoxCont" id="formExer" action="" autocomplete="off">
 									<div class="exerList">
 										<dl>
 											<dt>Q1. Socratic irony is...</dt>
