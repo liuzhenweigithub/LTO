@@ -1139,13 +1139,13 @@
 
 
 
-.digitalHub h3.h3One {
+h3.h3One {
 	padding: 0;
 	overflow: hidden;
 	zoom: 1;
 }
 
-.digitalHub h3.h3One span {
+h3.h3One span {
 	border-bottom: 3px solid #76ae31;
 	padding: 0 0 10px 0;
 	display: block;
@@ -1205,4 +1205,15 @@
 
 .digitalHub .hubLogo li p.text a {
 	color: #535353;
+}
+
+/*courseListTwo*/
+.mediaBox .courseListTwo{
+	background: url(../images/icon07.png) no-repeat 12px 18px;
+	border-top: none;
+	padding-left: 55px;
+}
+
+.pagesM10{
+	margin-top: 15px;
 }
