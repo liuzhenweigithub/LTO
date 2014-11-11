@@ -665,8 +665,12 @@ footer {
   color: #0b6fa8;
   font-weight: 700;
   text-align: center;
-  line-height: 1.1em;
-  margin-bottom: 20px;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+.cert-page h2 span {
+  font-size: 24px;
+  line-height: 1.2em;
 }
 .cert-page h3 {
   font-size: 18px;
